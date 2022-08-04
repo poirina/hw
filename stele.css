@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+header .navigation{
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 30px;
+    height: 72px;
+    padding-bottom: 40px;
+}
+header .navigation .logo{
+    max-width: 200px;
+    height: 56px;
+    padding-top: 8px;
+}
+header .navigation nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+header .navigation nav ul li{
+    display: inline;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    list-style: none;
+    color: #274C5B;
+}
+header .navigation nav ul li:hover{
+    color: #7EB693;
+    transition: 400mc;
+}
+header .navigation .but button{
+    width: 159px;
+    height: 70px;
+    border: 1px solid #D4D4D4;
+    border-radius: 33px;
+}
+header .navigation .but button span{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+}
+header .navigation .but img{
+    max-width: 56px;
+    margin-top: 2px;
+    margin-left: -44px;
+    max-height: 56px;
+}
+header .frut{
+    background-image: url(./img/frut.png);
+    height: 913px;
+    
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+header .frut .title{
+    padding-top: 220px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    font-family: 'Yellowtail', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+}
+header .frut .subtitle{
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+    padding-bottom: 30px;
+}
+header .frut .butt{
+    padding-left: 30px;
+}
+header .frut .butt button{
+    width: 219px;
+    height: 82px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+    background: #EFD372;
+    border: 1px solid #EFD372;
+    border-radius: 16px;
+}
+header .frut .butt button span{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+    background: #335B6B;
+    margin-left: 10px;
+}
+header .frut .butt button img{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+header .colum{
+    margin-top: 143px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 140px;
+}
+header .colum .banana{
+    background-image: url(./img/banana.png);
+    max-width: 665px;
+    width: 100%;
+    max-height: 378px;
+    height: 100%;
+    border-radius: 30px;
+}
+header .colum .banana .titl, header .colum .apricot .titl{
+    padding-top: 105px;
+    padding-left: 55px;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
+}
+header .colum .apricot{
+    background-image: url(./img/apricot.png);
+    max-width: 665px;
+    width: 100%;
+    max-height: 378px;
+    height: 100%;
+    border-radius: 30px;
+}
+header .colum .apricot .titl{
+    color: #7EB693;
+}
+header .colum .banana .text , header .colum .apricot .text{
+    padding-bottom: 105px;
+    font-weight: 400;
+    font-size: 40px;
+    padding-left: 55px;
+    line-height: 52px;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
+}
+header .colum .apricot .text{
+    color: #274C5B;
+}
+main .about{
+    display: flex;
+    padding-top: 130px;
+    height: 850px;
+    padding-bottom: 30px;
+    background: #F9F8F8
+}
+main .about .img{
+    max-width: 675px;
+    max-height: 642px;
+    padding-left: 30px;
+    padding-top: 47px;
+}
+main .about .text{
+    padding-left: 30px;
+    width: 640px;
+}
+main .about .text .ab{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+}
+main .about .text .believe{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+}
+main .about .text .welcome{
+    padding-top: 22px;
+    padding-bottom: 56px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #525C60;
+}
+main .about .text .organic,
+main .about .text .quality{
+    display: flex;
+    padding-bottom: 30px;
+}
+main .about .text .organic .img,
+main .about .text .quality .img{
+    max-width: 100px;
+    max-height: 100px;
+}
+main .about .text .organic .text,
+main .about .text .quality .text{
+    padding-top: 43px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+    padding-bottom: 9px;
+}
+main .about .text .organic .text p,
+main .about .text .quality .text p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #525C60;
+}
+main .about .text .butt button{
+    width: 199px;
+    height: 82px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 82px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #274C5B;
+    border: 1px solid #274C5B;
+    border-radius: 16px;
+}
+main .about .text .butt button span{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+    background: #335B6B;
+    margin-left: 10px;
+    margin-top: 23px;
+}
+main .about .text .butt button img{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+main .text-org{
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+}
+main .text-org p{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+    margin-bottom: 18px;
+}
+main .products,main .offer .con .produc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-bottom: 135px;
+}
+.w-col-4 {
+    width: 33.33333333%;
+}
+main .products .broccoli,main .offer .con .produc .broccoli{
+    width: 450px;
+    margin: 0 -10px 20px 35px ;
+    padding: 30px 10px 20px;
+    border-radius: 30px;
+    background-color: #f9f8f8;
+}
+main .products .broccoli .name, main .offer .con .produc .broccoli .name{
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    background-color: #274c5b;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+}
+main .products .broccoli img ,main .offer .con .produc .broccoli img{
+    max-width: 100%;
+    width: 387px;
+    height: 378px;
+    vertical-align: middle;
+    display: inline-block;
+}
+main .products .broccoli  p ,main .offer .con .produc .broccoli p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4d4d4;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+}
+main .products .broccoli .text , main .offer .con .produc .broccoli .text{
+    display: flex;
+    padding-top: 2px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .products .broccoli .text .prise, main .offer .con .produc .broccoli .text .prise{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-decoration-line: line-through;
+    color: #B8B8B8;
+}
+main .products .broccoli .text .money ,main .offer .con .produc .broccoli .text .money{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+}
+main .products .broccoli .text img,main .offer .con .produc .broccoli .text img{
+    width: 85px;
+    height: 19px;
+}
+main .testimonial{
+    background-image: url(./img/fon.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1163px;
+}
+main .testimonial .conteiner {
+    padding-top: 100px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+main .testimonial .conteiner .te{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+}
+main .testimonial .conteiner h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+    padding-bottom: 60px;
+} 
+main .testimonial .conteiner div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 29px;
+    padding-top: 60px;
+}
+main .testimonial .conteiner .text{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #525C60;
+}
+main .testimonial .conteiner h2{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+    padding-top: 23px;
+}
+main .testimonial .conteiner .na{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #525C60;
+}
+main .testimonial .line{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+main .testimonial .circle{
+    margin-top: 80px;
+    margin-left: 5%;
+    width: 90%;
+}
+main .testimonial .circle .conteine{
+    grid-column-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+}
+main .testimonial .circle .conteine .first{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #7eb693;
+    border-radius: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+}
+main .testimonial .circle .conteine .first h2{
+    font-size: 42px;
+    line-height: 55px;
+    padding-top: 66px;
+    padding-left: 15px;
+}
+main .offer{
+    background-color: #274c5b;
+    padding-top: 140px;
+}
+main .offer .con{
+    padding-left: 30px;
+    padding-bottom: 140px;
+}
+main .offer .con .of{
+    display: flex;
+    flex-direction: row;
+}
+main .offer .con .text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+main .offer .con .text p{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+}
+main .offer .con .text h2{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+main .offer .con button{
+    width: 267px;
+    height: 82px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+    background: #EFD372;
+    border: 1px solid #EFD372;
+    border-radius: 16px;
+    margin-top: 44px;
+    margin-left: 420px;
+}
+main .offer .con button span{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: absolute;
+    background: #335B6B;
+    margin-left: 10px;
+}
+main .offer .con button img{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+main .offer .con .produc .broccoli{
+    margin: 0 6px 20px 7px;
+    padding: 30px 10px 20px;
+}
+main .eco{
+    display: flex;
+}
+main .eco .img {
+    width: 50%;
+}
+main .eco .text{
+    width: 37%;
+    margin-top: 39px;
+    margin-bottom: 40px;
+    padding-left: 60px;
+    margin-left: -100px;
+    background: #FFFFFF;
+    border-radius: 30px 0px 0px 30px;
+}
+main .eco .text p{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #7EB693;
+}
+main .eco .text h2{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+}
+main .eco .text .f{
+    padding-top: 29px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #274C5B;
+}
+main .eco .text .f p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #525C60;
+    padding-bottom: 15px;
+}
+main .foods{
+    background: #EFF6F1;
+    padding-top: 140px;
+    padding-top: 140px;
+    display: flex;
+}
+.activ{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+main .foods img{
+    margin-left: 20px;
+}
+main .foods .fru{
+    display: flex;
+    height: 500px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/juise.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+main .foods .fru button  {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 300px;
+    height: 90px;
+}
+
