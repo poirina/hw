@@ -6,6 +6,5 @@ let pr=d*f;
 let chas=d/f;
 if(sum>1){
     sum=sum*sum;
-}else 
-sum =sum;
+}else  sum =sum;
 console.log ("сумма " +sum+" разность "+raz+" произведение "+pr+" частное "+chas);
