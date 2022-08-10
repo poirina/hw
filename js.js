@@ -4,23 +4,23 @@ let i,
 for(i=1;i<=50; i++){
     console.log(i);
 }
- while(d>=8){
+while(d>=8){
     console.log(d);
     d--;
- }
- //task2
- let a=89;
- while(a>10){
+}
+//task2
+let a=89;
+while(a>10){
     document.write(a+"<br>");
     a--;
- }
- //task3
- let c=0;
- for(i=0; i<=100; i++){
+}
+//task3
+let c=0;
+for(i=0; i<=100; i++){
     c+=i;
- }
- alert("Сумма чисел от 0 до 100 равна  "+ c);
- //task4
+}
+alert("Сумма чисел от 0 до 100 равна  "+ c);
+//task4
 let s = 0;
 for (i = 1; i <= 5; i++){
     s = 0;
@@ -54,4 +54,41 @@ for( let n=1000; n>50; n/=2){
     console.log("Иттерация",num);
 }
 //task 8
-let t=prompt();
+let q=0,
+    r=0,
+    ch;
+while ((ch=prompt("Введите число"),0)!=="0" && ch != null){
+    ++q;
+    r+= +ch;
+}
+alert("Чисел введено  "+q+"\n Сумма чисел "+r+"\n Среднее арифметическое "+(r/q));
+//task 9
+let nam="4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+let cur='', min, max;
+for (let i = 0; i < nam.length; i++) {
+  cur += nam[i];
+  if (+nam[i] && !+nam[i+1]) {
+    if (typeof min !== 'number' || cur < +min) min = +cur;
+    if (typeof max !== 'number' || cur > +max) max = +cur;
+    cur = '';
+  }
+}
+console.log('Min:'+min+'Max:'+ max)
+//task 10 a
+let n=653;
+let sum = 0;
+while(n> 0) {
+  sum += n % 10;
+  n = Math.floor(n / 10);
+}
+console.log(sum);
+let numbers= String(n).split("   ");
+alert(numbers);
+let numbersLenght =numbers.length
+alert(numbersLenght)
+let sm=0;
+      for(let i=0; i < numbersLenght; i++)
+        {
+          sm += Number(numbers[i]);                                        
+        }
+alert(sm);
