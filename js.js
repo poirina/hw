@@ -74,21 +74,3 @@ for (let i = 0; i < nam.length; i++) {
   }
 }
 console.log('Min:'+min+'Max:'+ max)
-//task 10 a
-let n=653;
-let sum = 0;
-while(n> 0) {
-  sum += n % 10;
-  n = Math.floor(n / 10);
-}
-console.log(sum);
-let numbers= String(n).split("   ");
-alert(numbers);
-let numbersLenght =numbers.length
-alert(numbersLenght)
-let sm=0;
-      for(let i=0; i < numbersLenght; i++)
-        {
-          sm += Number(numbers[i]);                                        
-        }
-alert(sm);
