@@ -1,0 +1,9 @@
+@media (max-width: 768px){
+    header .navigation nav ul li  {
+        font-size: 33px;
+        
+    }
+    header .navigation .cart .backet{
+        padding: 10px;
+    }
+}
