@@ -1,76 +1,81 @@
 //task1
-let i,
-    d=35;
-for(i=1;i<=50; i++){
-    console.log(i);
-}
-while(d>=8){
-    console.log(d);
-    d--;
+let arr1 = [1,2,3,4,5];
+for (let i=0; i<arr1.length; i++){
+    console.log(arr1[i]);
 }
 //task2
-let a=89;
-while(a>10){
-    document.write(a+"<br>");
-    a--;
+let arr2 = [-2, -1, -3, 15, 0, -4, 2, -5, 9, -15, 0, 4, 5, -6, 10, 7];
+for (let i=0; i<arr2.length; i++){
+    if(arr2[i]>-3) continue;
+    if(arr2[i]<-10) continue;
+    console.log(arr2[i]);
 }
+
 //task3
-let c=0;
-for(i=0; i<=100; i++){
-    c+=i;
+let arr3= [],
+    result=0;
+for (let i=23; i<=57; i++){
+    arr3.push(i);
+    result +=i;
 }
-alert("Сумма чисел от 0 до 100 равна  "+ c);
-//task4
-let s = 0;
-for (i = 1; i <= 5; i++){
-    s = 0;
-    for (let j = 1; j <= i; j++){
-        s = s + j;
+console.log(arr3);
+console.log(result);
+let i=22;
+while (i<=56){
+    i++;
+    console.log(i);
+}
+//task 4
+let arr4=["10", "20", "30", "50", "235", "3000"];
+for(i=0; i<arr4.length; i++){
+    str=arr4[i]+" ";
+    console.log(str);
+    if(str[0] === '1' || str[0] === '2' || str[0] === '5'){
+        console.log(arr4);
     }
-    console.log('sum ' + i + ' = ' + s);
 }
-//task 5
-for (i = 8; i < 56; i++){
-    if (i % 2 == 0)
-    console.log(i);
+//task5
+let day= ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+for (i=0; i< day.length; i++){
+    if( i==5 || i==6){
+        document.write('<b> <span>'+day[i]+'&#32;<span></b>');
+    } else{
+        document.write('<span>'+day[i]+'</span>'+"  ");
+    }
 }
-i = 8;
-while (i < 56){
-    if (i % 2 == 0)
-    console.log(i);
+//task6
+let arr6= ["10", "20", "30", "50", "235", "3000"];
+arr6.push("rewq")
+console.log(arr6);
+console.log(arr6[arr6.length-1]);
+//task7
+let arr7 =[];
+for(i = 0; ; i++){
+    arr7[i]=prompt("Введите числа");
+    if (arr7[i] === ' ') {
+        break;
+    }
+    else {
+        arr7.sort(function(a,b){
+            return a-b;
+        });
+    }
+        continue;
+}
+console.log(arr7);
+//task8
+let arr8 = [12, false, 'Текст', 4, 2, -5, 0];
+while(i <= arr8.length){
+    arr8.reverse();
     i++;
 }
-//task 6
-for (i=1; i<=10; i++){
-    for(k=1; k<=10; k++){
-        document.write(i+"*"+k+"="+(k*i)+"<br>");
+console.log(arr8);
+//task9 
+let arr9 = [5, 9, 21,' ',' ' , 9, 78,' ' ,' ' ,' ' , 6];
+let count = 0;
+for(i = 0; i < arr9.length; i++){
+    if(arr9[i] == ' '){
+    count++;    
     }
 }
-//task7
-let num=0;
-for( let n=1000; n>50; n/=2){
-    num++;
-    console.log("Числа после деления",n)
-    console.log("Иттерация",num);
-}
-//task 8
-let q=0,
-    r=0,
-    ch;
-while ((ch=prompt("Введите число"),0)!=="0" && ch != null){
-    ++q;
-    r+= +ch;
-}
-alert("Чисел введено  "+q+"\n Сумма чисел "+r+"\n Среднее арифметическое "+(r/q));
-//task 9
-let nam="4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
-let cur='', min, max;
-for (let i = 0; i < nam.length; i++) {
-  cur += nam[i];
-  if (+nam[i] && !+nam[i+1]) {
-    if (typeof min !== 'number' || cur < +min) min = +cur;
-    if (typeof max !== 'number' || cur > +max) max = +cur;
-    cur = '';
-  }
-}
-console.log('Min:'+min+'Max:'+ max)
+console.log(count);
