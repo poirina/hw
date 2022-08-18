@@ -26,21 +26,36 @@ function max(a,b){
     }
 }
 //task4
-function filterRange(mass) {
-    let newmas = [];
-    for (let i = 0; i < mass; i++) {
-        newmas.push(i);
+function Array(length){
+    length = prompt('Введите диапазон значений');
+    arr= [];
+    for(let i = 1; i <= length; i++){
+        arr.push(i); 
     }
-    console.log(newmas);
 }
-filterRange(12);
+Array();
+function showArray(length){
+    var Array2 = Array;
+    console.log(arr);
+}
+showArray();
 //task5
 function isEven(a){
-    if( a%2 ==0){
-        return 'true';
+    if( a%2 == 0){
+        return true;
     }else {
-        return 'False'
+        return False;
     }
 }
 //task6
-
+function createArray(arr){
+    let array = [];
+    for(let i = 0; i < arr.length; i++){
+        if (isEven(arr[i])){
+            array.push(arr[i]);
+        }
+        console.log(array);
+    }
+}
+createArray(5);
+//task7
