@@ -1,76 +1,44 @@
 //task1
-let i,
-    d=35;
-for(i=1;i<=50; i++){
-    console.log(i);
-}
-while(d>=8){
-    console.log(d);
-    d--;
-}
+let q = 'aaa@bbb@ccc';
+console.log(q.replace(/@/g, '!'));
 //task2
-let a=89;
-while(a>10){
-    document.write(a+"<br>");
-    a--;
-}
+let data = '2025-12-31';
+let arr1 = data.split('-');
+console.log(arr1[2]+'/'+arr1[1]+'/'+arr1[0]);
 //task3
-let c=0;
-for(i=0; i<=100; i++){
-    c+=i;
-}
-alert("Сумма чисел от 0 до 100 равна  "+ c);
+let w = '«Я учу javascript!»';
+let w1 = w.substring(3, 6);
+let w2 = w.substr(7, 10);
+let w3 = w.slice(7, 17);
+console.log(w1);
+console.log(w2);
+console.log(w3);
 //task4
-let s = 0;
-for (i = 1; i <= 5; i++){
-    s = 0;
-    for (let j = 1; j <= i; j++){
-        s = s + j;
-    }
-    console.log('sum ' + i + ' = ' + s);
+let arr = [4, 2, 5, 19, 13, 0, 10];
+let sum = 0;
+for (i = 0; i < arr.length; i++){
+    sum += Math.pow(arr[i],3)
 }
-//task 5
-for (i = 8; i < 56; i++){
-    if (i % 2 == 0)
-    console.log(i);
-}
-i = 8;
-while (i < 56){
-    if (i % 2 == 0)
-    console.log(i);
-    i++;
-}
-//task 6
-for (i=1; i<=10; i++){
-    for(k=1; k<=10; k++){
-        document.write(i+"*"+k+"="+(k*i)+"<br>");
+console.log(Math.sqrt(sum));
+//task5
+let a = +prompt('введите а'),
+    b = +prompt('введите b'),
+    c;
+console.log(c = Math.abs(a-b));
+//task6
+let date = new Date();
+let resDate = addZero(date.getDate()) + '.' + addZero(date.getMonth() + 1) + '.' + date.getFullYear();
+let numbers = addZero(date.getHours()) + ':' + addZero(date.getMinutes()) + ':' + addZero(date.getSeconds());
+console.log(numbers + ' ' + resDate);
+function addZero (num) {
+    if (num <= 9) {
+        return num = '0' + num;  
+    } else {
+        return num;
     }
 }
-//task7
-let num=0;
-for( let n=1000; n>50; n/=2){
-    num++;
-    console.log("Числа после деления",n)
-    console.log("Иттерация",num);
-}
-//task 8
-let q=0,
-    r=0,
-    ch;
-while ((ch=prompt("Введите число"),0)!=="0" && ch != null){
-    ++q;
-    r+= +ch;
-}
-alert("Чисел введено  "+q+"\n Сумма чисел "+r+"\n Среднее арифметическое "+(r/q));
-//task 9
-let nam="4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
-let cur='', min, max;
-for (let i = 0; i < nam.length; i++) {
-  cur += nam[i];
-  if (+nam[i] && !+nam[i+1]) {
-    if (typeof min !== 'number' || cur < +min) min = +cur;
-    if (typeof max !== 'number' || cur > +max) max = +cur;
-    cur = '';
-  }
-}
-console.log('Min:'+min+'Max:'+ max)
+//task7 
+console.log('aa aba abba abbba abca abea'.replace(/ab*a/g,'!'));
+//task8
+
+//task9
