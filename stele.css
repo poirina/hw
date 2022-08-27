@@ -6,7 +6,7 @@
     font-style: normal;
 }
 body{
-    width: 1440px;
+    width: 1518px;
 }
 header .navigation{
     display: flex;
@@ -21,7 +21,7 @@ header .navigation .logo{
     max-width: 200px;
     height: 56px;
     padding-top: 8px;
-    margin-right: 140px;
+    margin-right: 256px;
 }
 header .navigation nav {
     display: flex;
@@ -48,6 +48,7 @@ header .navigation .cart{
     border: 1px solid #D4D4D4;
     border-radius: 33px;
     cursor: pointer;
+    
 }
 header .navigation .cart .basket{
     display: flex;
@@ -58,6 +59,16 @@ header .navigation .cart .basket p{
     font-size: 17px;
     font-weight: 400px;
     margin-left: 10px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 29px;
+/* identical to box height, or 169% */
+
+letter-spacing: 0.36px;
+
+color: #274C5B;
     margin-right: 20px;
 }
 header .navigation .but img, footer .orange .input button img{
@@ -315,7 +326,7 @@ main .products,main .offer .con .produc{
 }
 main .products .broccoli,main .offer .con .produc .broccoli{
     width: 430px;
-    margin: 0 -6px 20px 18px;
+    margin: 0 28px 20px 18px;
     padding: 30px 14px 20px;
     border-radius: 30px;
     background-color: #f9f8f8;
@@ -385,8 +396,6 @@ main .testimonial{
 main .testimonial .conteiner {
     padding-top: 100px;
     max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     padding-right: 30px;
     padding-left: 30px;
 }
@@ -415,8 +424,6 @@ main .testimonial .conteiner div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 29px;
     padding-top: 60px;
 }
@@ -474,8 +481,6 @@ main .testimonial .circle .conteine .first{
     flex-direction: column;
     width: 250px;
     height: 250px;
-    margin-left: auto;
-    margin-right: auto;
     border-style: solid;
     border-width: 6px;
     border-color: #7eb693;
@@ -561,8 +566,8 @@ main .offer .con button img{
     margin-top: 11px;
 }
 main .offer .con .produc .broccoli{
-    margin: 0 6px 20px 7px;
-    padding: 30px 10px 20px;
+    margin: 0 17px 20px 16px;
+    padding: 30px 15px 12px;
 }
 main .eco{
     display: flex;
@@ -657,7 +662,7 @@ main .foods .fru-2{
 footer .orange{
     background-image: url(./img/orange.png);
     border-radius: 30px;
-    margin-left: 34px;
+    margin-left: 72px;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
