@@ -1,76 +1,155 @@
-//task1
-let i,
-    d=35;
-for(i=1;i<=50; i++){
-    console.log(i);
+let title = document.createElement('title');
+title.innerHTML = 'Call_to_Action';
+document.head.appendChild(title);
+
+let metaUTF8 = document.createElement('meta');
+metaUTF8.setAttribute('charset', 'UTF-8');
+document.head.appendChild(metaUTF8);
+
+let h1 = document.createElement('h1');
+h1.innerHTML = 'Choose Your Option';
+document.body.appendChild(h1);
+
+let p1 = document.createElement('p');
+p1.classList.add('p1');
+p1.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
+document.body.appendChild(p1);
+
+let div = document.createElement('div');
+div.innerHTML = '';
+div.classList.add('div');
+document.body.appendChild(div);
+
+let div1 = document.createElement('div');
+div1.innerHTML = '';
+div1.classList.add('div1');
+div.appendChild(div1);
+div1.onmouseover = function(){
+    div1.style.background = '#8F75BE';
 }
-while(d>=8){
-    console.log(d);
-    d--;
+div1.onmouseleave = function() {
+    div1.style.background= "#fff";
 }
-//task2
-let a=89;
-while(a>10){
-    document.write(a+"<br>");
-    a--;
+
+let h5 = document.createElement('h5');
+h5.innerHTML = 'FREELANCER';
+div1.appendChild(h5);
+
+let h2 = document.createElement('h2');
+h2.innerHTML = 'Initially designed to ';
+div1.appendChild(h2);
+
+let p2 = document.createElement('p');
+p2.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
+p2.classList.add('p2');
+div1.appendChild(p2);
+
+let button = document.createElement('p');
+button.innerHTML = 'START HERE';
+button.classList.add('button');
+div1.appendChild(button); 
+
+let div2 = document.createElement('div');
+div2.innerHTML = '';
+div2.classList.add('div2');
+div.appendChild(div2);
+div2.onmouseover = function(){
+    div2.style.background = '#8F75BE';
 }
-//task3
-let c=0;
-for(i=0; i<=100; i++){
-    c+=i;
+div2.onmouseleave = function() {
+    div2.style.background= "#fff";
 }
-alert("Сумма чисел от 0 до 100 равна  "+ c);
-//task4
-let s = 0;
-for (i = 1; i <= 5; i++){
-    s = 0;
-    for (let j = 1; j <= i; j++){
-        s = s + j;
+ 
+h5 = document.createElement('h5');
+h5.innerHTML = 'STUDIO';
+div2.appendChild(h5);
+
+h2 = document.createElement('h2');
+h2.innerHTML = 'Initially designed to ';
+div2.appendChild(h2);
+
+p2 = document.createElement('p');
+p2.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
+p2.classList.add('p2');
+div2.appendChild(p2);
+
+button = document.createElement('p');
+button.innerHTML = 'START HERE';
+button.classList.add('button');
+div2.appendChild(button); 
+
+let style = document.createElement('style');
+style.innerHTML = `
+    body{
+        text-align: center;
     }
-    console.log('sum ' + i + ' = ' + s);
-}
-//task 5
-for (i = 8; i < 56; i++){
-    if (i % 2 == 0)
-    console.log(i);
-}
-i = 8;
-while (i < 56){
-    if (i % 2 == 0)
-    console.log(i);
-    i++;
-}
-//task 6
-for (i=1; i<=10; i++){
-    for(k=1; k<=10; k++){
-        document.write(i+"*"+k+"="+(k*i)+"<br>");
+    .div{
+        height: 479px;
+        display: flex;
+        justify-content: center;
     }
-}
-//task7
-let num=0;
-for( let n=1000; n>50; n/=2){
-    num++;
-    console.log("Числа после деления",n)
-    console.log("Иттерация",num);
-}
-//task 8
-let q=0,
-    r=0,
-    ch;
-while ((ch=prompt("Введите число"),0)!=="0" && ch != null){
-    ++q;
-    r+= +ch;
-}
-alert("Чисел введено  "+q+"\n Сумма чисел "+r+"\n Среднее арифметическое "+(r/q));
-//task 9
-let nam="4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
-let cur='', min, max;
-for (let i = 0; i < nam.length; i++) {
-  cur += nam[i];
-  if (+nam[i] && !+nam[i+1]) {
-    if (typeof min !== 'number' || cur < +min) min = +cur;
-    if (typeof max !== 'number' || cur > +max) max = +cur;
-    cur = '';
-  }
-}
-console.log('Min:'+min+'Max:'+ max)
+    .div1, .div2{
+        border: 1px solid #E8E9ED;
+        width:400px;
+    }
+    h1 {
+        font-family: 'Arvo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        color: #212121;
+    }
+    .p1{
+        font-family: 'OpenSans';
+        font-size: 14px;
+        line-height: 26px;
+        color: #9FA3A7;
+        padding-bottom: 55px;
+    }
+    .p2{
+        padding-top: 25px;
+        font-family: 'OpenSans';
+        font-size: 14px;
+        line-height: 26px;
+        padding-left: 73px;
+        color: #9FA3A7;
+        max-width: 240px;
+    }
+    h5 {
+        margin-top: 81px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 2.4px;
+        color: #9FA3A7;
+        margin-bottom: 20px;
+    }
+    h2{
+        padding-top: 19px;
+        font-family: 'Arvo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 46px;
+        color: #212121;
+    }
+    .button{
+        border-radius: 40px;
+        border: 3px solid #FFC80A;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 24px 12px;
+        letter-spacing: 2.4px;
+        color: #212121;
+        width: 176px;
+        cursor: pointer;
+        margin: 52px 0 0 100px;
+    }
+`;
+
+document.head.appendChild(style);
