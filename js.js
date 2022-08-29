@@ -29,9 +29,24 @@ div1.onmouseover = function(){
     h5.style.color= ' #FFC80A';
 }
 div1.onmouseleave = function() {
-    div1.style.background= "#fff";
+    div1.style.background= "#fff";;
     h5.style.color = "#9FA3A7";
 }
+//при наведении мыши на блок второй блок исчезает полностью
+/*div1.onmouseover = function(){
+    div1.style.background = '#8F75BE';
+    h5.style.color= ' #FFC80A';
+    h2.style.color= '#fff ';
+    p2.style.color= ' #fff';
+    button.style.color= ' #fff';
+}
+div1.onmouseleave = function() {
+    div1.style.background= "#fff";;
+    h5.style.color = "#9FA3A7";
+    h2.style.color = "#212121";
+    p2.style.color = "#9FA3A7";
+    button.style.color = "#212121";
+}*/
 
 let h5 = document.createElement('h5');
 h5.innerHTML = 'FREELANCER';
@@ -65,7 +80,6 @@ div2.onmouseover = function(){
 div2.onmouseleave = function() {
     div2.style.background= "#fff";
     h6.style.color = "#9FA3A7";
-    h5.style.color = "#9FA3A7";
     h2.style.color = "#212121";
     p2.style.color = "#9FA3A7";
     button.style.color = "#212121";
