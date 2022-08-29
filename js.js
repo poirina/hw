@@ -26,9 +26,11 @@ div1.classList.add('div1');
 div.appendChild(div1);
 div1.onmouseover = function(){
     div1.style.background = '#8F75BE';
+    h5.style.color= ' #FFC80A';
 }
 div1.onmouseleave = function() {
     div1.style.background= "#fff";
+    h5.style.color = "#9FA3A7";
 }
 
 let h5 = document.createElement('h5');
@@ -55,14 +57,23 @@ div2.classList.add('div2');
 div.appendChild(div2);
 div2.onmouseover = function(){
     div2.style.background = '#8F75BE';
+    h6.style.color= ' #FFC80A';
+    h2.style.color= '#fff ';
+    p2.style.color= ' #fff';
+    button.style.color= ' #fff';
 }
 div2.onmouseleave = function() {
     div2.style.background= "#fff";
+    h6.style.color = "#9FA3A7";
+    h5.style.color = "#9FA3A7";
+    h2.style.color = "#212121";
+    p2.style.color = "#9FA3A7";
+    button.style.color = "#212121";
 }
  
-h5 = document.createElement('h5');
-h5.innerHTML = 'STUDIO';
-div2.appendChild(h5);
+let h6 = document.createElement('h6');
+h6.innerHTML = 'STUDIO';
+div2.appendChild(h6);
 
 h2 = document.createElement('h2');
 h2.innerHTML = 'Initially designed to ';
@@ -93,6 +104,7 @@ style.innerHTML = `
         width:400px;
     }
     h1 {
+        margin-top: 115px;
         font-family: 'Arvo';
         font-style: normal;
         font-weight: 400;
@@ -116,7 +128,7 @@ style.innerHTML = `
         color: #9FA3A7;
         max-width: 240px;
     }
-    h5 {
+    h5, h6{
         margin-top: 81px;
         font-family: 'Montserrat';
         font-style: normal;
