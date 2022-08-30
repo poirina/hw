@@ -24,37 +24,38 @@ let div1 = document.createElement('div');
 div1.innerHTML = '';
 div1.classList.add('div1');
 div.appendChild(div1);
+
 div1.onmouseover = function(){
     div1.style.background = '#8F75BE';
-    h5.style.color= ' #FFC80A';
+    h2.style.color= ' #FFC80A';
 }
 div1.onmouseleave = function() {
     div1.style.background= "#fff";;
-    h5.style.color = "#9FA3A7";
+    h2.style.color = "#9FA3A7";
 }
 //при наведении мыши на блок второй блок исчезает полностью
-/*div1.onmouseover = function(){
+div1.onmouseover = function(){
     div1.style.background = '#8F75BE';
-    h5.style.color= ' #FFC80A';
-    h2.style.color= '#fff ';
+    h2.style.color= ' #FFC80A';
+    h3.style.color= '#fff ';
     p2.style.color= ' #fff';
     button.style.color= ' #fff';
 }
 div1.onmouseleave = function() {
     div1.style.background= "#fff";;
-    h5.style.color = "#9FA3A7";
-    h2.style.color = "#212121";
+    h2.style.color = "#9FA3A7";
+    h3.style.color = "#212121";
     p2.style.color = "#9FA3A7";
     button.style.color = "#212121";
-}*/
-
-let h5 = document.createElement('h5');
-h5.innerHTML = 'FREELANCER';
-div1.appendChild(h5);
+}
 
 let h2 = document.createElement('h2');
-h2.innerHTML = 'Initially designed to ';
+h2.innerHTML = 'FREELANCER';
 div1.appendChild(h2);
+
+let h3 = document.createElement('h3');
+h3.innerHTML = 'Initially designed to ';
+div1.appendChild(h3);
 
 let p2 = document.createElement('p');
 p2.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
@@ -70,38 +71,39 @@ let div2 = document.createElement('div');
 div2.innerHTML = '';
 div2.classList.add('div2');
 div.appendChild(div2);
+
 div2.onmouseover = function(){
     div2.style.background = '#8F75BE';
     h6.style.color= ' #FFC80A';
-    h2.style.color= '#fff ';
-    p2.style.color= ' #fff';
-    button.style.color= ' #fff';
+    h4.style.color= '#fff ';
+    p3.style.color= ' #fff';
+    button_1.style.color= ' #fff';
 }
 div2.onmouseleave = function() {
     div2.style.background= "#fff";
     h6.style.color = "#9FA3A7";
-    h2.style.color = "#212121";
-    p2.style.color = "#9FA3A7";
-    button.style.color = "#212121";
+    h4.style.color = "#212121";
+    p3.style.color = "#9FA3A7";
+    button_1.style.color = "#212121";
 }
  
-let h6 = document.createElement('h6');
+let h6 = document.createElement('h2');
 h6.innerHTML = 'STUDIO';
 div2.appendChild(h6);
 
-h2 = document.createElement('h2');
-h2.innerHTML = 'Initially designed to ';
-div2.appendChild(h2);
+h4 = document.createElement('h3');
+h4.innerHTML = 'Initially designed to ';
+div2.appendChild(h4);
 
-p2 = document.createElement('p');
-p2.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
-p2.classList.add('p2');
-div2.appendChild(p2);
+p3 = document.createElement('p');
+p3.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
+p3.classList.add('p3');
+div2.appendChild(p3);
 
-button = document.createElement('p');
-button.innerHTML = 'START HERE';
-button.classList.add('button');
-div2.appendChild(button); 
+let button_1 = document.createElement('p');
+button_1.innerHTML = 'START HERE';
+button_1.classList.add('button_1');
+div2.appendChild(button_1); 
 
 let style = document.createElement('style');
 style.innerHTML = `
@@ -133,7 +135,7 @@ style.innerHTML = `
         color: #9FA3A7;
         padding-bottom: 55px;
     }
-    .p2{
+    .p2, .p3{
         padding-top: 25px;
         font-family: 'OpenSans';
         font-size: 14px;
@@ -142,7 +144,7 @@ style.innerHTML = `
         color: #9FA3A7;
         max-width: 240px;
     }
-    h5, h6{
+    h2, h6{
         margin-top: 81px;
         font-family: 'Montserrat';
         font-style: normal;
@@ -152,7 +154,7 @@ style.innerHTML = `
         color: #9FA3A7;
         margin-bottom: 20px;
     }
-    h2{
+    h3, h4{
         padding-top: 19px;
         font-family: 'Arvo';
         font-style: normal;
@@ -161,7 +163,7 @@ style.innerHTML = `
         line-height: 46px;
         color: #212121;
     }
-    .button{
+    .button, .button_1{
         border-radius: 40px;
         border: 3px solid #FFC80A;
         font-family: 'Montserrat';
