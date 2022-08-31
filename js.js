@@ -33,7 +33,6 @@ div1.onmouseleave = function() {
     div1.style.background= "#fff";;
     h2.style.color = "#9FA3A7";
 }
-//при наведении мыши на блок второй блок исчезает полностью
 div1.onmouseover = function(){
     div1.style.background = '#8F75BE';
     h2.style.color= ' #FFC80A';
