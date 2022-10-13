@@ -9,7 +9,7 @@ class App{
         elems.forEach(elem => this.root.append(elem));
     }
     init(){
-        this.render(header, footer);
+        this.render(header, main,footer);
     }
 }
 export default App;

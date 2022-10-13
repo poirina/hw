@@ -9,25 +9,25 @@ class Catalog{
         const data = await getApiData();
         this.catalog.innerHTML = '';
         const catalogContainer = document.createElement('div');
-        catalogContainer.classList.add('catalog')
+        catalogContainer.classList.add('catalog-container')
         data.forEach(element => {
+            const {id, image, title, price, rating: {rate}} = element;
             const product = document.createElement('div');
             product.classList.add('product');
             product.innerHTML = `
-            <div class="product">
-        <div class="img">
-            <a href="#Product/${element.id}"><img src="${element.image}" alt=""></a>
-        </div>
-        <p class="text"><a href="#Product/${element.id}">${element.title}</a></p>
-        <span class="price">${element.proce}</span>
-        <span class="raiting">${element.raiting.rate}</span>
-        </div>
+            <div class="img">
+                <a href="#Product/${id}"><img src="${image}" alt=""></a>
+            </div>
+            <p class="text"><a href="#Product/${id}">${title}</a></p>
+            <span class="price">${price}</span>
+            <span class="raiting">${rate}</span>
             `;
-        catalogContainer.append(product);
+            catalogContainer.append(product);
         });
-        this.catalog.append
+        this.catalog.append(catalogContainer);
     }
     init(){
+        this.initComponent();
         return this.catalog;
     }
 }

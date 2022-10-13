@@ -2,8 +2,7 @@ class Main{
     constructor(){
         this.main = document.createElement('main');
         this.main.classList.add('main');
-        this.main.innerHTML = `
-        <h1>Main<h1>`;
+        this.main.innerHTML = `<h1>Main</h1>`;
     }
     router(){
         let hash = location.hash.slice(1);
@@ -18,17 +17,18 @@ class Main{
             });
     }
     init(){
-        window.addEventListener('hashchange', () =>{
+        window.addEventListener('hashchange', (e) =>{
             this.router();
         });
         window.addEventListener('load', ()=>{
             const a = document.querySelectorAll('a[href="/"]');
-            a.forEach(elem =>{
+            a.forEach(elem => {
                 elem.addEventListener('click', e =>{
                     e.preventDefault();
                     location.hash = '';
                 });
             });
+            this.router();
         });
         return this.main;
     }
